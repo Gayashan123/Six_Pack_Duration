@@ -1,0 +1,272 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+    background-image: url('sixpack.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="number"],
+input[type="button"],
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Text and Number Inputs */
+input[type="text"],
+input[type="number"] {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Button Styling */
+input[type="button"],
+input[type="submit"] {
+    background: linear-gradient(45deg, #ff6f61, #ff3d00); /* Gym-themed gradient */
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+/* Button Hover Effect */
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background: linear-gradient(45deg, #ff3d00, #ff6f61); /* Reversed gradient on hover */
+    transform: translateY(-4px); /* Elevation effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Focus Effects */
+input[type="text"]:focus,
+input[type="number"]:focus {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.8);
+}
+
+/* Form Container Styling */
+#form-container {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* Form Heading */
+#form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Image Styling in Form Container */
+#form-container img {
+    width: 100%; /* Adjust the width to fill the container */
+    max-width: 300px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the image */
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Report Container Styling */
+#report-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* Report Heading */
+#report-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Close Button Styling */
+.close-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #af4c70;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.close-btn:hover {
+    background-color: #8a3a58;
+}
+
+/* Table Container Styling */
+#table-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Row Styling */
+th {
+    background-color: #ff6f61; /* Gym color */
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Data Row Styling */
+td {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Alternating Row Colors */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Hover Effect on Rows */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Table for Smaller Screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+/* Footer Styling */
+#footer {
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Copyright Button Styling */
+#copyright-btn {
+    background: linear-gradient(45deg, #ff6f61, #ff3d00); /* Gym-themed gradient */
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+/* Hover Effect */
+#copyright-btn:hover {
+    background: linear-gradient(45deg, #ff3d00, #ff6f61); /* Reverse the gradient on hover */
+    transform: translateY(-4px); /* Button elevation on hover */
+}
+
+/* Adjust Button for Mobile */
+@media (max-width: 768px) {
+    #copyright-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

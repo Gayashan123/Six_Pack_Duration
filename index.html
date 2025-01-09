@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Pack Measure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Six Pack Duration Time.</h1>
+
+    <!-- Main Input Fields -->
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="number" id="age" placeholder="Your Age">
+    <input type="button" value="Submit" id="submit">
+    <input type="button" value="Report" id="report">
+
+    <!-- Form Container -->
+    <div id="form-container">
+        <h2>Six Pack Measurement Details</h2>
+        <form id="form">
+            <input type="number" id="weight" placeholder="Enter your weight (kg)" required>
+            <input type="number" id="Situation" placeholder="Enter current situation %" required>
+            <input type="number" id="goal" placeholder="Enter goal body %" required>
+            <input type="number" id="grams" placeholder="Enter amount of fat loss per week" required>
+
+            <label>Please Select Current and Goal Situation Using This Image:</label>
+            <img src="Capture.PNG" alt="Current and Goal Situations">
+
+            <input type="submit" id="fsubmit" value="Submit Details">
+        </form>
+        <button class="close-btn">Close</button>
+    </div>
+
+    <!-- The Report -->
+    <div id="report-container">
+        <h2><u>The Report of <span id="report-name"></span></u></h2>
+        <form id="form1"></form>
+        <button class="close-btn">Close</button>
+    </div>
+
+  <!-- Footer Section -->
+<footer id="footer">
+    <button id="copyright-btn">© Gayashan 2025</button>
+</footer>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
