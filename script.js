@@ -81,7 +81,7 @@ function showReport() {
     // Add the labels with different styles
     labelContainer.innerHTML = `
         <label style="font-weight: bold; color: #333;">The Current Fat is:</label>
-        <label style="color: #ff4500; font-size: 16px;">${fat} kg</label><br>
+        <label style="color: #ff4500; font-size: 16px;">${weight.value} kg</label><br>
 
         <label style="font-weight: bold; color: #333;">Your Current Situation is:</label>
         <label style="color: #ff6347; font-size: 16px;">${Situation.value} %</label><br>
